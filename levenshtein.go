@@ -31,7 +31,7 @@ func computeLevenshteinValue(a, b string) int {
 	return f[len(f)-1]
 }
 
-func computeLevenshteinPercentage(a, b string) float64 {
+func ComputeLevenshteinPercentage(a, b string) float64 {
 	distance := computeLevenshteinValue(a, b)
 	length := calculateLongestWord(a, b)
 
